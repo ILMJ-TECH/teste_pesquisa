@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pesquisa de Carreiras Grupo Fleury</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Pesquisa de Satisfação - Site de Carreiras</h2>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+
+        <p class="progress-text">
+          <span id="currentStep">1</span> de <span id="totalSteps">12</span>
+        </p>
+      </div>
+
+      <div class="card">
+        <div id="questionContent"></div>
+
+        <div class="divider"></div>
+
+        <div class="buttons">
+          <button class="back" id="backButton">
+            <i class="fa-solid fa-chevron-left"></i> Voltar
+          </button>
+
+          <button class="next" id="nextButton">
+            Próximo <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <button class="finish hidden" id="finishButton">
+            Finalizar <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

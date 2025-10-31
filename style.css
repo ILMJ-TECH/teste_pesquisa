@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 480px;
+}
+
+h2 {
+  font-weight: 400;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  position: relative;
+  height: 6px;
+  background: #2a2a2a;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #e62424;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: right;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sub {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.options label {
+  display: block;
+  background: #2a2a2a;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, border 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.options label:hover {
+  background: #3a3a3a;
+}
+
+.options input[type="radio"]:checked + span {
+  color: #e62424;
+  font-weight: 600;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+.options input[type="radio"]:checked ~ label {
+  border: 1px solid #e62424;
+  background: #202020;
+}
+
+.scale-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.scale-numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.scale-numbers span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 600;
+  border: 2px solid #3a3a3a;
+  color: #999;
+}
+
+.scale-numbers span:hover {
+  background: #3a3a3a;
+}
+
+.scale-numbers span.selected {
+  background: #e62424;
+  color: #fff;
+  border-color: #e62424;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+}
+
+.scale-labels .label-min {
+  text-align: left;
+}
+.scale-labels .label-max {
+  text-align: right;
+}
+
+.divider {
+  height: 1px;
+  background: #2a2a2a;
+  margin: 25px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.back {
+  background: #151515;
+  color: #ddd;
+}
+
+.next {
+  background: #e62424;
+  color: #fff;
+}
+
+.finish {
+  background: #4caf50;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+button i {
+  margin: 0 4px;
+}
+
+.hidden {
+  display: none;
+}
