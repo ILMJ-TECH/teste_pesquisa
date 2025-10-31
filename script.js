@@ -298,11 +298,14 @@ finishButton.addEventListener("click", async () => {
     console.log("Dados a serem enviados:", userResponses);
     try {
       // --- O FETCH FOI REATIVADO AQUI ---
-      const response = await fetch("http://127.0.0.1:3000/survey", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(userResponses),
-      });
+      const response = await fetch(
+        "https://bq39wfbh-3000.brs.devtunnels.ms//survey",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(userResponses),
+        }
+      );
 
       if (response.ok) {
         alert("Feedback enviado com sucesso!");
