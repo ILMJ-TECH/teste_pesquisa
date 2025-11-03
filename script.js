@@ -299,7 +299,7 @@ finishButton.addEventListener("click", async () => {
     try {
       // --- O FETCH FOI REATIVADO AQUI ---
       const response = await fetch(
-        "https://lavette-femoral-zachery.ngrok-free.dev/survey",
+        "http://127.0.0.1:3000//survey",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
